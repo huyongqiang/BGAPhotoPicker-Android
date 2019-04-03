@@ -28,6 +28,8 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 import java.util.List;
 
+import cn.bingoogolapple.photopicker.BR;
+
 /**
  * 作者:王浩 邮件:bingoogolapple@gmail.com
  * 创建时间:16/11/10 下午9:36
@@ -88,9 +90,9 @@ public class BGABindingRecyclerViewAdapter<M, B extends ViewDataBinding> extends
 
         M model = getItem(position);
         B binding = viewHolder.getBinding();
-        binding.setVariable(cn.bingoogolapple.baseadapter.BR.viewHolder, viewHolder);
-        binding.setVariable(cn.bingoogolapple.baseadapter.BR.model, model);
-        binding.setVariable(cn.bingoogolapple.baseadapter.BR.itemEventHandler, mItemEventHandler);
+        binding.setVariable(BR.viewHolder, viewHolder);
+        binding.setVariable(BR.model, model);
+        binding.setVariable(BR.itemEventHandler, mItemEventHandler);
         binding.executePendingBindings();
 
         bindSpecialModel(binding, position, model);

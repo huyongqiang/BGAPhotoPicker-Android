@@ -45,11 +45,25 @@
 ## ----------------------------------
 ##      DataBinding 相关
 ## ----------------------------------
--keepclasseswithmembers class * extends android.databinding.ViewDataBinding{
-    <methods>;
-}
+#-keepclasseswithmembers class * extends android.databinding.ViewDataBinding{
+#    <methods>;
+#}
 
 ## ----------------------------------
 ##      BGAPhotoPicker 相关
 ## ----------------------------------
 -dontwarn cn.bingoogolapple.photopicker.imageloader.**
+
+## ----------------------------------
+##      DataBinding 相关
+## ----------------------------------
+-keepclasseswithmembers class * extends android.databinding.ViewDataBinding{
+    <methods>;
+}
+
+-dontwarn android.databinding.DataBindingUtil
+-dontwarn android.databinding.ViewDataBinding
+
+-dontwarn cn.bingoogolapple.baseadapter.BGABindingRecyclerViewAdapter
+-dontwarn cn.bingoogolapple.baseadapter.BGABindingViewHolder
+-dontwarn cn.bingoogolapple.baseadapter.BGAViewBindingAdapter
