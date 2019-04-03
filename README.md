@@ -1,6 +1,6 @@
 :running:BGAPhotoPicker-Android:running:
 ============
-
+兼容Glide4.9.0
 [兼容 Glide3](https://github.com/bingoogolapple/BGAPhotoPicker-Android/issues/118)
 
 ## 目录
