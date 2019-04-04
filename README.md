@@ -1,7 +1,7 @@
 :running:BGAPhotoPicker-Android:running:
 ============
-1,兼容Glide4.9.0＜br＞
-2,将bga-baseadapter，也合并到本库中，以解决在databinding中发生的依赖不到的问题＜br＞
+1,兼容Glide4.9.0   
+2,将bga-baseadapter，也合并到本库中，以解决在databinding中发生的依赖不到的问题   
 [兼容 Glide3](https://github.com/bingoogolapple/BGAPhotoPicker-Android/issues/118)
 
 ## 目录
